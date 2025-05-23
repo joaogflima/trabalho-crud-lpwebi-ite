@@ -2,3 +2,5 @@ O site trata-se de um CRUD de uma Plataforma de ITSM, com 3 tipos de perfis: Sol
 Solicitante: Pode realizar solicitações e acompanha-las.
 Atendente: Pode realizar solicitações, acompanha-las e atende-las.
 Administrador: Pode realizar solicitações, acompanha-las e atende-las, e gerenciar usuários.
+
+URL inicial: http://localhost/ITSM/login/login.php
