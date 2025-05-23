@@ -1,0 +1,24 @@
+-- Inserindo usuários fictícios
+INSERT INTO usuarios (nome, login, senha, email)
+VALUES 
+('João da Silva', 'joaos', 'senha123', 'joao.silva@email.com'),
+('Maria Oliveira', 'mariao', 'senha123', 'maria.oliveira@email.com'),
+('Carlos Souza', 'carloss', 'senha123', 'carlos.souza@email.com');
+
+-- Resetar Auto Increment para incidentes e requisicoes
+ALTER TABLE incidentes AUTO_INCREMENT = 1;
+ALTER TABLE requisicoes AUTO_INCREMENT = 1;
+
+-- Inserindo incidentes fictícios
+INSERT INTO incidentes (titulo, descricao, status, prioridade, criado_por)
+VALUES
+('Erro no sistema de e-mail', 'Usuário relata que não consegue enviar e-mails pelo Outlook.', 'Aberto', 'Alta', 1),
+('Impressora não funciona', 'A impressora da sala 101 está offline e não responde.', 'Em andamento', 'Média', 2),
+('Sistema de ponto caiu', 'O sistema de registro de ponto não está acessível.', 'Aberto', 'Crítica', 3);
+
+-- Inserindo requisições fictícias
+INSERT INTO requisicoes (titulo, descricao, tipo, status, criado_por)
+VALUES
+('Solicitação de acesso ao sistema financeiro', 'Usuário precisa de acesso ao SAP para emitir relatórios.', 'Acesso', 'Pendente', 1),
+('Pedido de notebook novo', 'Solicitação de notebook para novo colaborador.', 'Hardware', 'Pendente', 2),
+('Instalação de Adobe Photoshop', 'Solicitação de instalação do software para área de marketing.', 'Software', 'Em análise', 3);
